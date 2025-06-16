@@ -154,8 +154,7 @@ public class RockPaperScissor {
 
         }
 
-        // ****************************************************************Displaying
-        // Scoreboard***************************************************
+        // ****************************************************************Displaying Scoreboard***************************************************
         try {
             Connection connection = DriverManager.getConnection(url, username, password);
             String displayQuery = "SELECT playerName, Winnings, Losings, Tie FROM playerScore ORDER BY Winnings DESC";
